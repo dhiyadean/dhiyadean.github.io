@@ -242,8 +242,6 @@ h6 {
 .section-heading {
   float: left;
   width: 100%;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
   clear: both;
 }
 .section-heading.svg-sm-2 .svg {
@@ -537,35 +535,18 @@ h6 {
   font-family: "Caveat";
 }
 
-#bs-countdown {
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  z-index: 0;
-  width: 100%;
+.caveat32 {
+  font-family: "Caveat";
+  font-size: 32px;
 }
+
 #bs-countdown .section-heading {
   margin-bottom: 0 !important;
-}
-#bs-countdown .section-heading h2 {
-  color: #fff;
 }
 @media screen and (max-width: 768px) {
   #bs-countdown .section-heading h2 {
     font-size: 30px;
   }
-}
-#bs-countdown .section-heading .datewed {
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.7);
-}
-#bs-countdown .section-heading.svg-sm .svg {
-  height: 180px;
-  margin-bottom: -50px;
-  padding: 0;
-}
-#bs-countdown .section-heading.colored .svg {
-  fill: #fff;
 }
 #bs-countdown .overlay {
   width: 100%;
@@ -578,7 +559,7 @@ h6 {
 #bs-countdown .countdown {
   margin-bottom: 0;
   font-size: 80px;
-  color: #fff;
+  color: #008080;
 }
 #bs-countdown .countdown span {
   margin: 0 30px;
@@ -595,12 +576,6 @@ h6 {
 }
 #bs-countdown .display-over {
   z-index: 2;
-}
-
-#bs-countdown .bgimg {
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .couple {
@@ -1097,6 +1072,12 @@ h6 {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+
+.wedding-events .desc2 .greenallura {
+  font-family: "Allura";
+  font-size: 36px;
+  color: #008080;
 }
 @media screen and (max-width: 768px) {
   .wedding-events .desc .icon {
