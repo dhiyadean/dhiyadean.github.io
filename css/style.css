@@ -9,24 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "Brandon Grotesque";
-  src: url("../fonts/brandon/Brandon.eot");
-  src: url("../fonts/brandon/Brandon.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/brandon/Brandon.woff2") format("woff2"),
-    url("../fonts/brandon/Brandon.woff") format("woff"),
-    url("../fonts/brandon/Brandon.ttf") format("truetype"),
-    url("../fonts/brandon/Brandon.svg#Brandon Grotesque") format("svg");
-}
-@font-face {
-  font-family: "Mudhisa";
-  src: url("../fonts/mudhisa/Mudhisa.eot");
-  src: url("../fonts/mudhisa/Mudhisa.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/mudhisa/Mudhisa.woff2") format("woff2"),
-    url("../fonts/mudhisa/Mudhisa.woff") format("woff"),
-    url("../fonts/mudhisa/Mudhisa.ttf") format("truetype"),
-    url("../fonts/mudhisa/Mudhisa.svg#Mudhisa") format("svg");
-}
 
 /* =======================================================
 *
@@ -35,7 +17,8 @@
 *
 * ======================================================= */
 body {
-  font-family: "Brandon Grotesque", Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
@@ -47,7 +30,7 @@ body {
 }
 
 a {
-  color: #ff847c;
+  color: #008080;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -55,7 +38,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ff847c;
+  color: #008080;
   outline: none;
 }
 
@@ -68,7 +51,7 @@ h2,
 h5,
 h6 {
   color: #000;
-  font-family: "Clicker Script", cursive;
+  font-family: "Allura", cursive;
   font-weight: 400;
 }
 
@@ -87,7 +70,7 @@ h6 {
   background: #f9f6f0;
 }
 
-#bstrap-header {
+#bs-header {
   position: absolute;
   z-index: 99;
   width: 100%;
@@ -96,7 +79,7 @@ h6 {
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-header {
+  #bs-header {
     margin-top: 0;
     background: #fff;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -104,54 +87,54 @@ h6 {
     -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
-  #bstrap-header .navbar-brand {
-    color: #ff847c !important;
+  #bs-header .navbar-brand {
+    color: #008080 !important;
   }
-  #bstrap-header #navbar li a {
+  #bs-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
   }
-  #bstrap-header #navbar li a:hover {
-    color: #ff847c !important;
+  #bs-header #navbar li a:hover {
+    color: #008080 !important;
   }
-  #bstrap-header #navbar li a span:before {
+  #bs-header #navbar li a span:before {
     background: transparent !important;
   }
-  #bstrap-header #navbar li.active a {
+  #bs-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #ff847c !important;
+    color: #008080 !important;
   }
-  #bstrap-header #navbar li.active a span:before {
+  #bs-header #navbar li.active a span:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
 }
-#bstrap-header .navbar {
+#bs-header .navbar {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-#bstrap-header #navbar li a {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+#bs-header #navbar li a {
+  font-family: "Caveat", Arial, sans-serif;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
 }
-#bstrap-header #navbar li a span {
+#bs-header #navbar li a span {
   position: relative;
   display: block;
   padding-bottom: 2px;
 }
-#bstrap-header #navbar li a span:before {
+#bs-header #navbar li a span:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ff847c;
+  background-color: #008080;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -164,10 +147,10 @@ h6 {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-#bstrap-header #navbar li a:hover {
+#bs-header #navbar li a:hover {
   color: #fff;
 }
-#bstrap-header #navbar li a:hover span:before {
+#bs-header #navbar li a:hover span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
@@ -175,25 +158,25 @@ h6 {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
-#bstrap-header #navbar li.active a {
+#bs-header #navbar li.active a {
   background: transparent;
   background: none;
   color: #fff;
 }
-#bstrap-header #navbar li.active a span:before {
+#bs-header #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-#bstrap-header .navbar-brand {
+#bs-header .navbar-brand {
   float: left;
   display: block;
   font-size: 34px;
   padding-left: 0;
   color: #fff;
-  font-family: "Clicker Script", cursive;
+  font-family: "Caveat", cursive;
 }
-#bstrap-header.navbar-fixed-top {
+#bs-header.navbar-fixed-top {
   position: fixed !important;
   background: #fff;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -203,29 +186,29 @@ h6 {
   margin-top: 0px;
   top: 0;
 }
-#bstrap-header.navbar-fixed-top .navbar-brand {
-  color: #ff847c;
+#bs-header.navbar-fixed-top .navbar-brand {
+  color: #008080;
 }
-#bstrap-header.navbar-fixed-top #navbar li a {
+#bs-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#bstrap-header.navbar-fixed-top #navbar li a:hover {
-  color: #ff847c;
+#bs-header.navbar-fixed-top #navbar li a:hover {
+  color: #008080;
 }
-#bstrap-header.navbar-fixed-top #navbar li.active a {
+#bs-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #ff847c;
+  color: #008080;
 }
-#bstrap-header.navbar-fixed-top #navbar li.active a span:before {
+#bs-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-#bstrap-header .navbar-default {
+#bs-header .navbar-default {
   border: transparent;
   background: transparent;
   -webkit-border-radius: 0px;
@@ -234,23 +217,23 @@ h6 {
   border-radius: 0px;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-header .navbar-default {
+  #bs-header .navbar-default {
     margin-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
   }
 }
-#bstrap-header .navbar-default .brand-slogan {
+#bs-header .navbar-default .brand-slogan {
   margin: 28px 0 0 15px;
   float: left;
   letter-spacing: 2px;
   color: #adadad;
 }
-#bstrap-header .navbar-default .brand-slogan em {
-  color: #ff847c;
+#bs-header .navbar-default .brand-slogan em {
+  color: #008080;
   font-style: normal;
 }
-#bstrap-header a {
+#bs-header a {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
@@ -273,7 +256,7 @@ h6 {
   padding: 0;
 }
 .section-heading.colored .svg {
-  fill: #ff847c;
+  fill: #008080;
 }
 .section-heading.white .svg {
   fill: #fff;
@@ -281,7 +264,7 @@ h6 {
 }
 .section-heading h2 {
   font-size: 80px;
-  color: #ff847c;
+  color: #008080;
   display: block;
   padding-bottom: 20px;
   line-height: 1.5;
@@ -309,51 +292,51 @@ h6 {
   transition: 0.3s;
 }
 
-#bstrap-couple,
-#bstrap-countdown,
-#bstrap-groom-bride,
-#bstrap-story,
-#bstrap-people,
-#bstrap-when-where,
-#bstrap-started,
-#bstrap-gallery,
-#bstrap-testimonials,
-#bstrap-press {
+#bs-couple,
+#bs-countdown,
+#bs-groom-bride,
+#bs-story,
+#bs-people,
+#bs-when-where,
+#bs-started,
+#bs-gallery,
+#bs-testimonials,
+#bs-press {
   padding: 7em 0;
 }
 @media screen and (max-width: 480px) {
-  #bstrap-couple,
-  #bstrap-countdown,
-  #bstrap-groom-bride,
-  #bstrap-story,
-  #bstrap-people,
-  #bstrap-when-where,
-  #bstrap-started,
-  #bstrap-gallery,
-  #bstrap-testimonials,
-  #bstrap-press {
+  #bs-couple,
+  #bs-countdown,
+  #bs-groom-bride,
+  #bs-story,
+  #bs-people,
+  #bs-when-where,
+  #bs-started,
+  #bs-gallery,
+  #bs-testimonials,
+  #bs-press {
     padding: 5em 0;
   }
 }
 
-.bstrap-bg {
+.bs-bg {
   background: rgba(0, 0, 0, 0.03);
 }
 
-.bstrap-cover,
-.bstrap-hero {
+.bs-cover,
+.bs-hero {
   position: relative;
   height: 100%;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .bstrap-cover,
-  .bstrap-hero {
+  .bs-cover,
+  .bs-hero {
     height: 700px;
   }
 }
 
-.bstrap-overlay {
+.bs-overlay {
   position: absolute !important;
   width: 100%;
   top: 0;
@@ -364,19 +347,19 @@ h6 {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.bstrap-cover,
+.bs-cover,
 .video-hero {
   background-size: cover;
   background-position: center center !important;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
-  .bstrap-cover,
+  .bs-cover,
   .video-hero {
     background-position: center center;
   }
 }
-.bstrap-cover .display-t,
+.bs-cover .display-t,
 .video-hero .display-t {
   display: table;
   height: 800px;
@@ -385,17 +368,17 @@ h6 {
   z-index: 2;
 }
 @media screen and (max-width: 768px) {
-  .bstrap-cover .display-t,
+  .bs-cover .display-t,
   .video-hero .display-t {
     height: 600px;
   }
 }
-.bstrap-cover .display-tc,
+.bs-cover .display-tc,
 .video-hero .display-tc {
   display: table-cell;
   vertical-align: middle;
 }
-.bstrap-cover .display-tc .holder,
+.bs-cover .display-tc .holder,
 .video-hero .display-tc .holder {
   color: #fff;
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -403,12 +386,12 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 10px;
 }
-.bstrap-cover .display-tc .holder span,
+.bs-cover .display-tc .holder span,
 .video-hero .display-tc .holder span {
   position: relative;
 }
-.bstrap-cover .display-tc .holder span:before,
-.bstrap-cover .display-tc .holder span:after,
+.bs-cover .display-tc .holder span:before,
+.bs-cover .display-tc .holder span:after,
 .video-hero .display-tc .holder span:before,
 .video-hero .display-tc .holder span:after {
   position: absolute;
@@ -418,101 +401,100 @@ h6 {
   background: #fff;
   content: "";
 }
-.bstrap-cover .display-tc .holder span:before,
+.bs-cover .display-tc .holder span:before,
 .video-hero .display-tc .holder span:before {
   left: -110px;
 }
-.bstrap-cover .display-tc .holder span:after,
+.bs-cover .display-tc .holder span:after,
 .video-hero .display-tc .holder span:after {
   right: -110px;
 }
 @media screen and (max-width: 768px) {
-  .bstrap-cover .display-tc .holder,
+  .bs-cover .display-tc .holder,
   .video-hero .display-tc .holder {
     letter-spacing: 2px;
   }
-  .bstrap-cover .display-tc .holder span,
+  .bs-cover .display-tc .holder span,
   .video-hero .display-tc .holder span {
     position: relative;
   }
-  .bstrap-cover .display-tc .holder span:before,
-  .bstrap-cover .display-tc .holder span:after,
+  .bs-cover .display-tc .holder span:before,
+  .bs-cover .display-tc .holder span:after,
   .video-hero .display-tc .holder span:before,
   .video-hero .display-tc .holder span:after {
     width: 50px;
     height: 2px;
   }
-  .bstrap-cover .display-tc .holder span:before,
+  .bs-cover .display-tc .holder span:before,
   .video-hero .display-tc .holder span:before {
     left: -60px;
   }
-  .bstrap-cover .display-tc .holder span:after,
+  .bs-cover .display-tc .holder span:after,
   .video-hero .display-tc .holder span:after {
     right: -60px;
   }
 }
-.bstrap-cover .display-tc h2,
+.bs-cover .display-tc h2,
 .video-hero .display-tc h2 {
   color: #fff;
   font-size: 80px;
   margin-bottom: 20px;
   font-weight: 300 !important;
 }
-.bstrap-cover .and {
+.bs-cover .and {
   color: #fff;
-  font-family: "Mudhisa";
   font-size: 190px;
   position: relative;
   top: 30px;
 }
-.bstrap-cover .display-tc h2 strong,
+.bs-cover .display-tc h2 strong,
 .video-hero .display-tc h2 strong {
   font-weight: 700;
 }
 @media screen and (max-width: 768px) {
-  .bstrap-cover .display-tc h2,
+  .bs-cover .display-tc h2,
   .video-hero .display-tc h2 {
     font-size: 60px;
   }
 }
-.bstrap-cover .display-tc p,
+.bs-cover .display-tc p,
 .video-hero .display-tc p {
   color: #fff;
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 10px;
 }
-.bstrap-cover .display-tc .svg-sm .svg,
+.bs-cover .display-tc .svg-sm .svg,
 .video-hero .display-tc .svg-sm .svg {
   height: 180px;
   margin-bottom: 0;
 }
-.bstrap-cover .display-tc .colored .svg,
+.bs-cover .display-tc .colored .svg,
 .video-hero .display-tc .colored .svg {
   fill: #fff;
 }
 
-#bstrap-slider-hero {
+#bs-slider-hero {
   min-height: 800px;
   background: #fff url(../images/loader.gif) no-repeat center center;
 }
-#bstrap-slider-hero .flexslider {
+#bs-slider-hero .flexslider {
   border: none;
   z-index: 1;
   margin-bottom: 0;
 }
-#bstrap-slider-hero .flexslider .slides {
+#bs-slider-hero .flexslider .slides {
   position: relative;
   overflow: hidden;
 }
-#bstrap-slider-hero .flexslider .slides li {
+#bs-slider-hero .flexslider .slides li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   min-height: 770px;
   position: relative;
 }
-#bstrap-slider-hero .flexslider .slides li:after {
+#bs-slider-hero .flexslider .slides li:after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -522,53 +504,53 @@ h6 {
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-#bstrap-slider-hero .flexslider .flex-control-nav {
+#bs-slider-hero .flexslider .flex-control-nav {
   bottom: 7em;
   z-index: 1000;
 }
-#bstrap-slider-hero .flexslider .flex-control-nav li a {
+#bs-slider-hero .flexslider .flex-control-nav li a {
   background: rgba(255, 255, 255, 0.5);
   box-shadow: none;
   width: 12px;
   height: 12px;
   cursor: pointer;
 }
-#bstrap-slider-hero .flexslider .flex-control-nav li a.flex-active {
+#bs-slider-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
-  background: #ff847c;
+  background: #008080;
 }
-#bstrap-slider-hero .flexslider .flex-direction-nav {
+#bs-slider-hero .flexslider .flex-direction-nav {
   display: none;
 }
-#bstrap-slider-hero .flexslider .slider-text {
+#bs-slider-hero .flexslider .slider-text {
   display: table;
   opacity: 0;
   min-height: 800px;
   z-index: 9;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner {
   display: table-cell;
   vertical-align: middle;
   height: 800px;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1,
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner h2 {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner h1,
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner h2 {
   margin: 0;
   padding: 0;
   color: white;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
   margin-bottom: 20px;
   font-size: 80px;
   line-height: 1.3;
   font-weight: 300;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
+  #bs-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
     font-size: 30px;
   }
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
   color: #fff;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 18px;
@@ -576,16 +558,16 @@ h6 {
   letter-spacing: 10px;
   font-weight: 400;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder span {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner .holder span {
   position: relative;
 }
-#bstrap-slider-hero
+#bs-slider-hero
   .flexslider
   .slider-text
   > .slider-text-inner
   .holder
   span:before,
-#bstrap-slider-hero
+#bs-slider-hero
   .flexslider
   .slider-text
   > .slider-text-inner
@@ -598,7 +580,7 @@ h6 {
   background: #fff;
   content: "";
 }
-#bstrap-slider-hero
+#bs-slider-hero
   .flexslider
   .slider-text
   > .slider-text-inner
@@ -606,7 +588,7 @@ h6 {
   span:before {
   left: -110px;
 }
-#bstrap-slider-hero
+#bs-slider-hero
   .flexslider
   .slider-text
   > .slider-text-inner
@@ -615,24 +597,19 @@ h6 {
   right: -110px;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
+  #bs-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
     letter-spacing: 2px;
   }
-  #bstrap-slider-hero
-    .flexslider
-    .slider-text
-    > .slider-text-inner
-    .holder
-    span {
+  #bs-slider-hero .flexslider .slider-text > .slider-text-inner .holder span {
     position: relative;
   }
-  #bstrap-slider-hero
+  #bs-slider-hero
     .flexslider
     .slider-text
     > .slider-text-inner
     .holder
     span:before,
-  #bstrap-slider-hero
+  #bs-slider-hero
     .flexslider
     .slider-text
     > .slider-text-inner
@@ -641,7 +618,7 @@ h6 {
     width: 50px;
     height: 2px;
   }
-  #bstrap-slider-hero
+  #bs-slider-hero
     .flexslider
     .slider-text
     > .slider-text-inner
@@ -649,7 +626,7 @@ h6 {
     span:before {
     left: -60px;
   }
-  #bstrap-slider-hero
+  #bs-slider-hero
     .flexslider
     .slider-text
     > .slider-text-inner
@@ -658,26 +635,26 @@ h6 {
     right: -60px;
   }
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner h2 {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner h2 {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 40px;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner h2 a {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner h2 a {
   color: rgba(255, 255, 255, 0.5);
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner .date {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner .date {
   color: #fff;
   font-weight: 400;
   font-size: 24px;
   letter-spacing: 10px;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner .date span {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner .date span {
   padding: 5px 20px;
   border: 1px solid #fff;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn {
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner .btn {
   padding: 18px 30px !important;
   color: #fff;
   border: none !important;
@@ -686,14 +663,14 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-#bstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-  background: #ff847c !important;
+#bs-slider-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
+  background: #008080 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
-#bstrap-couple img {
+#bs-couple img {
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -701,83 +678,92 @@ h6 {
   border-radius: 50%;
 }
 
-#bstrap-couple .bismi {
+#bs-couple .bismi {
   -webkit-border-radius: 0%;
   -moz-border-radius: 0%;
   -ms-border-radius: 0%;
   border-radius: 0%;
   margin-bottom: 10px;
+  font-family: "Harmattan";
 }
 
-#bstrap-couple h3 {
+#bs-couple h3 {
   font-size: 34px;
-  font-family: "Clicker Script", cursive;
-  color: #ff847c;
+  font-family: "Allura", cursive;
+  color: #008080;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-couple h3 {
+  #bs-couple h3 {
     font-size: 35px;
   }
 }
-#bstrap-couple span {
-  color: #ff847c;
+#bs-couple span {
+  color: #008080;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 14px;
   border: 1px solid rgba(255, 132, 124, 0.3);
   padding: 2px 5px;
 }
-#bstrap-couple .amp-center {
+#bs-couple .amp-center {
   font-size: 60px;
   margin-top: 100%;
-  color: #ff847c;
+  color: #008080;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-couple .amp-center {
+  #bs-couple .amp-center {
     font-size: 40px;
   }
 }
-#bstrap-couple .amp-center .colored .svg {
-  fill: #ff847c;
+#bs-couple .amp-center .colored .svg {
+  fill: #008080;
 }
 
-.bstrap-bg {
+.bs-bg {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
 }
 
-#bstrap-countdown {
+.arabic {
+  font-family: "Reem Kufi";
+}
+
+.caveat {
+  font-family: "Caveat";
+}
+
+#bs-countdown {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   z-index: 0;
   width: 100%;
 }
-#bstrap-countdown .section-heading {
+#bs-countdown .section-heading {
   margin-bottom: 0 !important;
 }
-#bstrap-countdown .section-heading h2 {
+#bs-countdown .section-heading h2 {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-countdown .section-heading h2 {
+  #bs-countdown .section-heading h2 {
     font-size: 30px;
   }
 }
-#bstrap-countdown .section-heading .datewed {
+#bs-countdown .section-heading .datewed {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.7);
 }
-#bstrap-countdown .section-heading.svg-sm .svg {
+#bs-countdown .section-heading.svg-sm .svg {
   height: 180px;
   margin-bottom: -50px;
   padding: 0;
 }
-#bstrap-countdown .section-heading.colored .svg {
+#bs-countdown .section-heading.colored .svg {
   fill: #fff;
 }
-#bstrap-countdown .overlay {
+#bs-countdown .overlay {
   width: 100%;
   top: 0;
   left: 0;
@@ -785,24 +771,25 @@ h6 {
   right: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-#bstrap-countdown .countdown {
+#bs-countdown .countdown {
   margin-bottom: 0;
   font-size: 80px;
   color: #fff;
 }
-#bstrap-countdown .countdown span {
+#bs-countdown .countdown span {
   margin: 0 30px;
   display: inline-block;
-  font-family: "Clicker Script", cursive;
+  font-family: "Allura", cursive;
 }
-#bstrap-countdown .countdown small {
+#bs-countdown .countdown small {
   display: block;
   font-size: 14px;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
-#bstrap-countdown .display-over {
+#bs-countdown .display-over {
   z-index: 2;
 }
 
@@ -849,7 +836,7 @@ h6 {
   z-index: 1;
 }
 .couple .desc h2 {
-  color: #ff847c;
+  color: #008080;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -998,7 +985,7 @@ h6 {
 .timeline-title {
   margin-top: 0;
   font-size: 34px;
-  color: #ff847c;
+  color: #008080;
   margin-bottom: 30px;
 }
 
@@ -1054,19 +1041,19 @@ h6 {
     right: auto;
   }
 }
-.bstrap-messages {
+.bs-messages {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
 }
 
-#bstrap-testimonials {
+#bs-testimonials {
   position: relative;
   background-size: cover;
   background-position: center center !important;
   background-repeat: no-repeat;
 }
-#bstrap-testimonials .overlay {
+#bs-testimonials .overlay {
   position: absolute !important;
   width: 100%;
   top: 0;
@@ -1076,38 +1063,38 @@ h6 {
   z-index: -1;
   background: rgba(0, 0, 0, 0.4);
 }
-#bstrap-testimonials .section-heading {
+#bs-testimonials .section-heading {
   margin-bottom: 0 !important;
 }
-#bstrap-testimonials .section-heading h2 {
+#bs-testimonials .section-heading h2 {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-testimonials .section-heading h2 {
+  #bs-testimonials .section-heading h2 {
     font-size: 30px;
   }
 }
-#bstrap-testimonials .section-heading.svg-sm .svg {
+#bs-testimonials .section-heading.svg-sm .svg {
   height: 180px;
   margin-bottom: -50px;
   padding: 0;
 }
-#bstrap-testimonials .section-heading.colored .svg {
+#bs-testimonials .section-heading.colored .svg {
   fill: #fff;
 }
-#bstrap-testimonials .box-testimony {
+#bs-testimonials .box-testimony {
   margin-bottom: 2em;
 }
-#bstrap-testimonials .box-testimony a {
+#bs-testimonials .box-testimony a {
   color: rgba(255, 255, 255, 0.5);
 }
-#bstrap-testimonials .box-testimony a:hover,
-#bstrap-testimonials .box-testimony a:focus,
-#bstrap-testimonials .box-testimony a:active {
+#bs-testimonials .box-testimony a:hover,
+#bs-testimonials .box-testimony a:focus,
+#bs-testimonials .box-testimony a:active {
   color: white;
   text-decoration: none;
 }
-#bstrap-testimonials .box-testimony blockquote {
+#bs-testimonials .box-testimony blockquote {
   padding-left: 0;
   border-left: none;
   padding: 40px;
@@ -1119,7 +1106,7 @@ h6 {
   border-radius: 4px;
 }
 
-#bstrap-testimonials .box-testimony blockquote .quote {
+#bs-testimonials .box-testimony blockquote .quote {
   position: absolute;
   top: 0;
   left: 10px;
@@ -1131,37 +1118,37 @@ h6 {
   width: 56px;
   height: 56px;
   margin-top: -30px;
-  background: #ff847c;
+  background: #008080;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
-#bstrap-testimonials .box-testimony blockquote .quote > span {
+#bs-testimonials .box-testimony blockquote .quote > span {
   display: table-cell;
   vertical-align: middle;
 }
-#bstrap-testimonials .box-testimony blockquote p {
+#bs-testimonials .box-testimony blockquote p {
   font-style: italic;
 }
-#bstrap-testimonials .box-testimony .author {
+#bs-testimonials .box-testimony .author {
   line-height: 20px;
   color: white;
   font-size: 20px;
   margin-left: 20px;
 }
-#bstrap-testimonials .box-testimony .author .subtext {
+#bs-testimonials .box-testimony .author .subtext {
   display: block;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
 }
-#bstrap-testimonials .testimony-slide {
+#bs-testimonials .testimony-slide {
   position: relative;
   color: #fff !important;
   width: 90%;
   margin: 0 auto;
 }
-#bstrap-testimonials .testimony-slide blockquote {
+#bs-testimonials .testimony-slide blockquote {
   border: none;
   position: relative;
   padding: 0;
@@ -1169,31 +1156,31 @@ h6 {
   font-family: "Clicker Script", cursive;
   font-style: italic;
 }
-#bstrap-testimonials .arrow-thumb {
+#bs-testimonials .arrow-thumb {
   position: absolute;
   top: 40%;
   display: block;
   width: 100%;
 }
-#bstrap-testimonials .arrow-thumb a {
+#bs-testimonials .arrow-thumb a {
   font-size: 32px;
   color: #dadada;
 }
-#bstrap-testimonials .arrow-thumb a:hover,
-#bstrap-testimonials .arrow-thumb a:focus,
-#bstrap-testimonials .arrow-thumb a:active {
+#bs-testimonials .arrow-thumb a:hover,
+#bs-testimonials .arrow-thumb a:focus,
+#bs-testimonials .arrow-thumb a:active {
   text-decoration: none;
 }
-#bstrap-testimonials .owl-theme .owl-dots .owl-dot span {
+#bs-testimonials .owl-theme .owl-dots .owl-dot span {
   background: rgba(255, 255, 255, 0.3) !important;
 }
-#bstrap-testimonials .owl-theme .owl-dots .active span {
+#bs-testimonials .owl-theme .owl-dots .active span {
   background: white !important;
 }
-#bstrap-testimonials .bstrap-heading {
+#bs-testimonials .bs-heading {
   margin-bottom: 3em;
 }
-#bstrap-testimonials .bstrap-heading h2 {
+#bs-testimonials .bs-heading h2 {
   color: #fff;
   margin-bottom: 20px !important;
 }
@@ -1212,7 +1199,7 @@ h6 {
   }
 }
 .groom-men h3 {
-  font-family: "Clicker Script", cursive;
+  font-family: "Allura", cursive;
   font-size: 28px;
 }
 
@@ -1233,6 +1220,14 @@ h6 {
 }
 .wedding-events .desc {
   padding: 2em;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 0;
+}
+.wedding-events .desc2 {
+  padding: 2em;
   border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 0;
@@ -1247,11 +1242,22 @@ h6 {
   background: #f4f3e2;
   z-index: -1;
 }
+.wedding-events .desc2:after {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  content: "";
+  background: #f4f3e2;
+  z-index: -1;
+}
 .wedding-events .desc h3 {
-  font-size: 40px;
-  color: #ff847c;
+  font-size: 48px;
+  color: #008080;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  font-family: "Allura";
 }
 .wedding-events .desc .date {
   display: block;
@@ -1276,7 +1282,7 @@ h6 {
 .wedding-events .desc .icon i {
   color: #fff;
   padding: 15px;
-  background: #ff847c;
+  background: #008080;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1289,36 +1295,36 @@ h6 {
   }
 }
 
-#bstrap-started {
+#bs-started {
   position: relative;
 }
-#bstrap-started .section-heading {
+#bs-started .section-heading {
   margin-bottom: 0 !important;
 }
-#bstrap-started .section-heading h2 {
+#bs-started .section-heading h2 {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #bstrap-started .section-heading h2 {
+  #bs-started .section-heading h2 {
     font-size: 30px;
   }
 }
-#bstrap-started .section-heading h3 {
+#bs-started .section-heading h3 {
   color: rgba(255, 255, 255, 0.8);
 }
-#bstrap-started .section-heading .datewed {
+#bs-started .section-heading .datewed {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.7);
 }
-#bstrap-started .section-heading.svg-sm .svg {
+#bs-started .section-heading.svg-sm .svg {
   height: 180px;
   margin-bottom: -50px;
   padding: 0;
 }
-#bstrap-started .section-heading.colored .svg {
+#bs-started .section-heading.colored .svg {
   fill: #fff;
 }
-#bstrap-started .overlay {
+#bs-started .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1326,13 +1332,13 @@ h6 {
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-#bstrap-started .bstrap-heading h2 {
+#bs-started .bs-heading h2 {
   color: #fff;
 }
-#bstrap-started .bstrap-heading p {
+#bs-started .bs-heading p {
   color: rgba(255, 255, 255, 0.5);
 }
-#bstrap-started .form-control {
+#bs-started .form-control {
   background: rgba(255, 255, 255, 0.2);
   border: none !important;
   color: #fff;
@@ -1344,27 +1350,27 @@ h6 {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#bstrap-started .form-control::-webkit-input-placeholder {
+#bs-started .form-control::-webkit-input-placeholder {
   color: #fff;
 }
-#bstrap-started .form-control:-moz-placeholder {
+#bs-started .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
-#bstrap-started .form-control::-moz-placeholder {
+#bs-started .form-control::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
-#bstrap-started .form-control:-ms-input-placeholder {
+#bs-started .form-control:-ms-input-placeholder {
   color: #fff;
 }
-#bstrap-started .form-control:focus {
+#bs-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
-#bstrap-started .btn {
+#bs-started .btn {
   height: 54px;
   border: none !important;
-  background: #ff847c;
+  background: #008080;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1372,17 +1378,17 @@ h6 {
   padding-left: 50px;
   padding-right: 50px;
 }
-#bstrap-started .form-inline .form-group {
+#bs-started .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
 }
-#bstrap-started .form-inline .form-group .form-control {
+#bs-started .form-inline .form-group .form-control {
   width: 100%;
 }
-#bstrap-started .bstrap-heading {
+#bs-started .bs-heading {
   margin-bottom: 30px;
 }
-#bstrap-started .bstrap-heading h2 {
+#bs-started .bs-heading h2 {
   margin-bottom: 0;
 }
 
@@ -1417,11 +1423,11 @@ h6 {
   transform: scale(1.1);
 }
 
-#bstrap-press {
+#bs-press {
   background: #f4f4f4;
 }
 
-#bstrap-press .bstrap-press-item {
+#bs-press .bs-press-item {
   background: #fff;
   float: left;
   margin-bottom: 30px;
@@ -1438,28 +1444,28 @@ h6 {
   border-radius: 4px;
 }
 @media screen and (max-width: 480px) {
-  #bstrap-press .bstrap-press-item {
+  #bs-press .bs-press-item {
     display: block !important;
   }
 }
-#bstrap-press .bstrap-press-item .bstrap-press-text,
-#bstrap-press .bstrap-press-item .bstrap-press-img {
+#bs-press .bs-press-item .bs-press-text,
+#bs-press .bs-press-item .bs-press-img {
   width: 50%;
 }
 @media screen and (max-width: 480px) {
-  #bstrap-press .bstrap-press-item .bstrap-press-text,
-  #bstrap-press .bstrap-press-item .bstrap-press-img {
+  #bs-press .bs-press-item .bs-press-text,
+  #bs-press .bs-press-item .bs-press-img {
     height: inherit;
     float: none !important;
     width: 100%;
     display: block !important;
   }
 }
-#bstrap-press .bstrap-press-item .bstrap-press-text {
+#bs-press .bs-press-item .bs-press-text {
   float: left;
   padding: 20px;
 }
-#bstrap-press .bstrap-press-item .bstrap-press-text .bstrap-press-title {
+#bs-press .bs-press-item .bs-press-text .bs-press-title {
   margin: 0 0 20px 0;
   padding: 0 0 10px 0;
   font-weight: 400;
@@ -1467,19 +1473,15 @@ h6 {
   color: #444;
   position: relative;
 }
-#bstrap-press
-  .bstrap-press-item
-  .bstrap-press-text
-  .bstrap-press-title
-  .bstrap-border {
+#bs-press .bs-press-item .bs-press-text .bs-press-title .bs-border {
   position: absolute;
   left: 0;
   bottom: 0;
   height: 2px;
   width: 30px;
-  background: #ff847c;
+  background: #008080;
 }
-#bstrap-press .bstrap-press-item .bstrap-press-img {
+#bs-press .bs-press-item .bs-press-img {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1487,7 +1489,7 @@ h6 {
   background-size: cover;
 }
 @media screen and (max-width: 480px) {
-  #bstrap-press .bstrap-press-item .bstrap-press-img {
+  #bs-press .bs-press-item .bs-press-img {
     height: 200px;
     left: 0;
     top: 0;
@@ -1496,23 +1498,23 @@ h6 {
   }
 }
 
-.bstrap-nav-toggle {
+.bs-nav-toggle {
   width: 25px;
   height: 25px;
   cursor: pointer;
   text-decoration: none;
 }
-.bstrap-nav-toggle.active i::before,
-.bstrap-nav-toggle.active i::after {
-  background: #ff847c;
+.bs-nav-toggle.active i::before,
+.bs-nav-toggle.active i::after {
+  background: #008080;
 }
-.bstrap-nav-toggle:hover,
-.bstrap-nav-toggle:focus,
-.bstrap-nav-toggle:active {
+.bs-nav-toggle:hover,
+.bs-nav-toggle:focus,
+.bs-nav-toggle:active {
   outline: none;
   border-bottom: none !important;
 }
-.bstrap-nav-toggle i {
+.bs-nav-toggle i {
   position: relative;
   display: -moz-inline-stack;
   display: inline-block;
@@ -1520,19 +1522,19 @@ h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #ff847c;
+  color: #008080;
   font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #ff847c;
+  background: #008080;
   transition: all 0.2s ease-out;
 }
-.bstrap-nav-toggle i::before,
-.bstrap-nav-toggle i::after {
+.bs-nav-toggle i::before,
+.bs-nav-toggle i::after {
   content: "";
   width: 25px;
   height: 3px;
-  background: #ff847c;
+  background: #008080;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1540,27 +1542,27 @@ h6 {
   transition: 0.2s;
 }
 
-.bstrap-nav-toggle i::before {
+.bs-nav-toggle i::before {
   top: -7px;
 }
 
-.bstrap-nav-toggle i::after {
+.bs-nav-toggle i::after {
   bottom: -7px;
 }
 
-.bstrap-nav-toggle:hover i::before {
+.bs-nav-toggle:hover i::before {
   top: -10px;
 }
 
-.bstrap-nav-toggle:hover i::after {
+.bs-nav-toggle:hover i::after {
   bottom: -10px;
 }
 
-.bstrap-nav-toggle.active i {
+.bs-nav-toggle.active i {
   background: transparent;
 }
 
-.bstrap-nav-toggle.active i::before {
+.bs-nav-toggle.active i::before {
   top: 0;
   -webkit-transform: rotateZ(45deg);
   -moz-transform: rotateZ(45deg);
@@ -1569,7 +1571,7 @@ h6 {
   transform: rotateZ(45deg);
 }
 
-.bstrap-nav-toggle.active i::after {
+.bs-nav-toggle.active i::after {
   bottom: 0;
   -webkit-transform: rotateZ(-45deg);
   -moz-transform: rotateZ(-45deg);
@@ -1578,7 +1580,7 @@ h6 {
   transform: rotateZ(-45deg);
 }
 
-.bstrap-nav-toggle {
+.bs-nav-toggle {
   position: absolute;
   top: 12px;
   right: 0px;
@@ -1592,7 +1594,7 @@ h6 {
   border-bottom: none !important;
 }
 @media screen and (max-width: 768px) {
-  .bstrap-nav-toggle {
+  .bs-nav-toggle {
     display: block;
   }
 }
@@ -1640,7 +1642,7 @@ h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #ff847c;
+  background: #008080;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
@@ -1649,7 +1651,7 @@ h6 {
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
   box-shadow: none;
-  background: #ff847c;
+  background: #008080;
 }
 .btn:hover,
 .btn:active,
@@ -1695,11 +1697,11 @@ h6 {
   border-bottom: none;
 }
 .social li a.social-box {
-  background: #ff847c;
+  background: #008080;
   color: #fff;
 }
 .social li a.social-circle {
-  background: #ff847c;
+  background: #008080;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1710,11 +1712,11 @@ h6 {
   background: #393e46 !important;
 }
 .social.social-box a {
-  background: #ff847c;
+  background: #008080;
   color: #fff;
 }
 .social.social-circle a {
-  background: #ff847c;
+  background: #008080;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1774,14 +1776,14 @@ h6 {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #ff847c;
+  border-color: #008080;
 }
 
 .js .animate-box {
   opacity: 0;
 }
 
-.bstrap-animated {
+.bs-animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
