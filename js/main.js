@@ -268,8 +268,6 @@
     document.getElementById("hours").innerHTML = hours + " <small>jam</small> ";
     document.getElementById("minutes").innerHTML =
       minutes + " <small>menit</small> ";
-    document.getElementById("seconds").innerHTML =
-      seconds + " <small>detik</small> ";
 
     // If the count down is finished, write some text
     if (distance < 0) {
