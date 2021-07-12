@@ -559,7 +559,7 @@ h6 {
 }
 #bs-countdown .countdown {
   margin-bottom: 0;
-  font-size: 25px;
+  font-size: 35px;
   color: #008080;
 }
 #bs-countdown .countdown span {
@@ -572,7 +572,6 @@ h6 {
   font-size: 14px;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, Helvetica, sans-serif;
-  letter-spacing: 10px;
   text-transform: uppercase;
 }
 #bs-countdown .display-over {
